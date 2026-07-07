@@ -40,10 +40,7 @@ export const metadata: Metadata = {
     description: "Pure handwoven Banarasi silk sarees from the looms of Varanasi.",
     url: site.url,
     siteName: site.name,
-  },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    images: [{ url: "/logo-maroon.png", width: 668, height: 702, alt: "Banarasi Vastram" }],
   },
 };
 

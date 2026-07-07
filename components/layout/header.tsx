@@ -149,7 +149,7 @@ export function Header() {
             className="fixed inset-0 z-50 flex flex-col bg-maroon-900 px-6 pb-8 pt-6 text-cream lg:hidden"
           >
             <div className="flex items-center justify-between">
-              <Brand light />
+              <Brand full light className="h-16" />
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close menu"

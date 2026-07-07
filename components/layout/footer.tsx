@@ -19,7 +19,7 @@ export function Footer() {
       <div className="tape" />
       <div className="container-lux grid gap-x-8 gap-y-10 py-14 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.4fr] lg:py-20">
         <div>
-          <Brand light />
+          <Brand full light className="h-24" />
           <p className="my-6 max-w-xs text-sm text-cream/70">
             Handwoven Banarasi silk sarees from the sacred looms of Varanasi — where every thread carries the soul of Kashi.
           </p>

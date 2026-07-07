@@ -1,16 +1,46 @@
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export function Brand({ light = false, className }: { light?: boolean; className?: string }) {
+/**
+ * Brand lockup.
+ * - default: real peacock emblem (from the brand logo) + wordmark — for the slim header.
+ * - full:    the complete logo lockup image — for the footer & mobile drawer.
+ * `light` picks the cream artwork (on dark backgrounds) vs the maroon artwork (on light).
+ */
+export function Brand({
+  light = false,
+  full = false,
+  className,
+}: {
+  light?: boolean;
+  full?: boolean;
+  className?: string;
+}) {
+  if (full) {
+    return (
+      <Link href="/" aria-label="Banarasi Vastram — Imperial Weaves of Kashi" className={cn("inline-block", className)}>
+        <Image
+          src={light ? "/logo-cream.png" : "/logo-maroon.png"}
+          alt="Banarasi Vastram — Imperial Weaves of Kashi"
+          width={668}
+          height={702}
+          priority
+          className="h-full w-auto"
+        />
+      </Link>
+    );
+  }
+
   return (
     <Link href="/" aria-label="Banarasi Vastram home" className={cn("group inline-flex items-center gap-3", className)}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/emblem.svg"
+      <Image
+        src={light ? "/emblem-cream.png" : "/emblem-maroon.png"}
         alt=""
-        width={40}
-        height={46}
-        className="h-[46px] w-[40px] transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-105"
+        width={317}
+        height={435}
+        priority
+        className="h-12 w-auto transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-105"
       />
       <span className="leading-none">
         <span

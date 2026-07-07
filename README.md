@@ -48,7 +48,12 @@ tailwind.config.ts      # brand colours, fonts, keyframes/animations
 
 - **Imperial Maroon** `#5A1220` · **Zari Gold** `#C6A15B` · **Kashi Cream** `#F8F0DF`
 - **Display type:** Cormorant Garamond · **Interface type:** Jost (loaded via `next/font`)
-- The peacock **logo was recreated as a scalable SVG** (`public/emblem.svg`) with a matching favicon and Banarasi motif patterns (jaal, buta/paisley, temple border).
+- **Brand logo:** the official Banarasi Vastram logo is used throughout. Source art lives in `public/logo/`;
+  processed variants are generated in `public/`:
+  - `logo-cream.png` / `logo-maroon.png` — full lockups (used in footer & mobile drawer)
+  - `emblem-cream.png` / `emblem-maroon.png` — the peacock "B" mark (used in the header)
+  - `app/icon.png` + `app/apple-icon.png` — favicon / touch icon (emblem on a maroon tile)
+  The header/footer auto-pick the cream art on dark backgrounds and the maroon art on light ones.
 
 ## ✏️ Editing content
 
