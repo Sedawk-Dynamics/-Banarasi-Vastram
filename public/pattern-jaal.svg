@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g fill="none" stroke="#F1E2BE" stroke-opacity="0.20" stroke-width="1">
+    <path d="M32 0 L64 32 L32 64 L0 32 Z"/>
+  </g>
+  <g fill="#F1E2BE" fill-opacity="0.16">
+    <ellipse cx="32" cy="25" rx="2.4" ry="5.4"/>
+    <ellipse cx="32" cy="39" rx="2.4" ry="5.4"/>
+    <ellipse cx="25" cy="32" rx="5.4" ry="2.4"/>
+    <ellipse cx="39" cy="32" rx="5.4" ry="2.4"/>
+    <circle cx="32" cy="32" r="1.8"/>
+    <circle cx="0" cy="0" r="2.2"/>
+    <circle cx="64" cy="0" r="2.2"/>
+    <circle cx="0" cy="64" r="2.2"/>
+    <circle cx="64" cy="64" r="2.2"/>
+  </g>
+</svg>

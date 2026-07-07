@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="140" viewBox="0 0 120 140">
+  <g fill="none" stroke="#C6A15B" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round">
+    <!-- paisley buta 1 -->
+    <path d="M30 20 C 52 22 62 44 54 64 C 48 80 30 84 22 72 C 16 63 22 52 32 52 C 40 52 44 60 40 66"/>
+    <path d="M30 28 C 44 30 50 46 45 60" stroke-opacity="0.3"/>
+    <circle cx="30" cy="20" r="1.6" fill="#C6A15B" stroke="none"/>
+    <!-- paisley buta 2 (offset) -->
+    <path d="M90 90 C 112 92 122 114 114 134 C 108 150 90 154 82 142 C 76 133 82 122 92 122 C 100 122 104 130 100 136"/>
+    <path d="M90 98 C 104 100 110 116 105 130" stroke-opacity="0.3"/>
+    <circle cx="90" cy="90" r="1.6" fill="#C6A15B" stroke="none"/>
+    <!-- small blossoms -->
+    <g stroke-opacity="0.35">
+      <circle cx="92" cy="30" r="4"/><path d="M92 24 v-4 M92 36 v4 M86 30 h-4 M98 30 h4"/>
+      <circle cx="24" cy="112" r="4"/><path d="M24 106 v-4 M24 118 v4 M18 112 h-4 M30 112 h4"/>
+    </g>
+  </g>
+</svg>

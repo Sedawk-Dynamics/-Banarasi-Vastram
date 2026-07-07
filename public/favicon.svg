@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Banarasi Vastram">
+  <rect width="64" height="64" rx="14" fill="#5A1220"/>
+  <g stroke="#D9BA78" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M32 46 C 44 44 51 38 55 30"/>
+    <path d="M32 46 C 40 34 44 24 45 15"/>
+    <path d="M32 46 C 32 34 32 22 32 12"/>
+    <path d="M32 46 C 24 34 20 24 19 15"/>
+    <path d="M32 46 C 20 44 13 38 9 30"/>
+  </g>
+  <g fill="#D9BA78">
+    <circle cx="55" cy="30" r="2.4"/>
+    <circle cx="45" cy="15" r="2.4"/>
+    <circle cx="32" cy="12" r="2.6"/>
+    <circle cx="19" cy="15" r="2.4"/>
+    <circle cx="9" cy="30" r="2.4"/>
+    <ellipse cx="32" cy="50" rx="6" ry="7"/>
+    <circle cx="32" cy="34" r="3.4"/>
+  </g>
+  <path d="M32 30 L 29 25 L 35 25 Z" fill="#5A1220"/>
+</svg>
