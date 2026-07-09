@@ -15,7 +15,7 @@ export const site = {
   email: "info@banarasivastram.com",
   hours: "Mon – Sun · 09:00 AM – 09:30 PM",
   address:
-    "Maurya Bhawan, B36/4-2, near Sankat Mochan Police Chowki, opp. Sulabh Complex, Saket Nagar Colony, Lanka, Varanasi, Uttar Pradesh 221005",
+    "Maurya Bhawan, B36 / 4-2, near Sankat Mochan Police Chowki, opp. Sulabh Complex, Saket Nagar Colony, Lanka, Varanasi, Uttar Pradesh 221005",
   addressShort: "Saket Nagar Colony, Lanka, Varanasi, UP 221005",
   geo: { lat: 25.283453985916122, lng: 83.00049459477819 },
   mapEmbed:
@@ -165,7 +165,7 @@ export const catalog: Record<string, { meta: Collection; items: Product[] }> = {
 // Editorial imagery
 export const media = {
   hero: "/images/hero.jpg",
-  frameHeritage: img("37877827"),
+  frameHeritage: img("32794733"),
   frameFeature: img("16239658"),
   frameAbout: img("18340831"),
   frameFounder: img("5174199"),
@@ -215,7 +215,7 @@ export const craftSteps = [
 ];
 
 export const usps = [
-  { icon: "Sparkles", title: "Authentic Pure Zari", text: "Genuine gold & silver zari and certified pure silk — never synthetic substitutes." },
+  { icon: "Sparkles", title: "Authentic Pure Zari", text: "Genuine gold & silver zari and pure mulberry silk — never synthetic substitutes." },
   { icon: "Hand", title: "Master Weavers of Kashi", text: "Woven directly by artisan families of Varanasi, sustaining the living handloom tradition." },
   { icon: "ShieldCheck", title: "GI-Authentic Banarasi", text: "True Geographical-Indication Banarasi weaves, backed by our authenticity assurance." },
   { icon: "Scissors", title: "Bespoke Customisation", text: "Personalise colour, motif & blouse. Custom bridal commissions crafted to your vision." },

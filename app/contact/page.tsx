@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock, User } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { PageHero } from "@/components/sections/page-hero";
 import { ContactForm } from "@/components/sections/contact-form";
 import { Reveal } from "@/components/ui/reveal";
@@ -70,27 +70,8 @@ export default function ContactPage() {
             <div className="mt-8 space-y-6">
               <InfoRow icon={MapPin} title="Showroom" body={site.address} />
               <InfoRow icon={Clock} title="Working Hours" body={site.hours} />
-              <div className="flex items-start gap-4 border-b border-gold/15 pb-6">
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-gold/40 bg-cream text-maroon">
-                  <User className="h-5 w-5" />
-                </span>
-                <div>
-                  <h4 className="font-sans text-[0.74rem] font-semibold uppercase tracking-wide2 text-gold-600">
-                    Business Development
-                  </h4>
-                  <p className="text-ink-2">
-                    {site.team.name} · {site.team.role.split("—")[1]?.trim() ?? site.team.role}
-                    <br />
-                    <a href={`mailto:${site.team.email}`} className="hover:text-maroon">
-                      {site.team.email}
-                    </a>{" "}
-                    ·{" "}
-                    <a href={`tel:${site.team.phoneRaw}`} className="hover:text-maroon">
-                      {site.team.phone}
-                    </a>
-                  </p>
-                </div>
-              </div>
+              <InfoRow icon={Phone} title="Call / WhatsApp" body={site.phone} />
+              <InfoRow icon={Mail} title="Email" body={site.email} />
             </div>
 
             <div className="mt-6 overflow-hidden rounded-xl border border-gold/40 shadow-lux">

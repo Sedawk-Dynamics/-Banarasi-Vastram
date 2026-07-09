@@ -50,13 +50,11 @@ export function Header() {
         )}
       >
         <div className="container-lux flex h-10 items-center justify-center gap-3 text-center text-[0.72rem] uppercase tracking-wide2 text-gold-100">
-          <span>Silk Mark Certified Pure Silk</span>
-          <span className="text-gold">✦</span>
-          <span className="hidden sm:inline">
+          <span>
             Handwoven in <b className="font-semibold text-gold-300">Varanasi</b>
           </span>
-          <span className="hidden text-gold sm:inline">✦</span>
-          <span className="hidden md:inline">Complimentary Shipping Worldwide</span>
+          <span className="text-gold">✦</span>
+          <span>Complimentary Shipping Worldwide</span>
         </div>
       </div>
 

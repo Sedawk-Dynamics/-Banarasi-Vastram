@@ -17,7 +17,7 @@ export function Heritage() {
     <section id="legacy" className="section py-20 md:py-28 lg:py-32">
       <div className="container-lux grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <Reveal direction="left">
-          <Frame color="#6E1023" image={media.frameHeritage} alt="Master weaver at a Banarasi pit-loom in Varanasi" badgeTop={"Est.\nKashi"} badgeSub="Handloom Heritage" />
+          <Frame color="#6E1023" image={media.frameHeritage} alt="Bride draped in a red and gold Banarasi silk saree" badgeTop={"Est.\nKashi"} badgeSub="Handloom Heritage" />
         </Reveal>
 
         <Reveal direction="right" className="max-w-xl">

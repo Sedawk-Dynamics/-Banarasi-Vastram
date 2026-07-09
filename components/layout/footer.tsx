@@ -66,7 +66,7 @@ export function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-              <span>{site.addressShort}</span>
+              <span>{site.address}</span>
             </li>
             <li className="flex gap-2.5">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

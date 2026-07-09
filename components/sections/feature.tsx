@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { media } from "@/data/site";
 
 const points = [
-  "Certified pure silk with genuine gold & silver zari.",
+  "Pure mulberry silk with genuine gold & silver zari.",
   "Handwoven by master weavers of Varanasi — GI-authentic Banarasi.",
   "Traditional motifs — jangla, shikargah, meenakari & more.",
 ];
