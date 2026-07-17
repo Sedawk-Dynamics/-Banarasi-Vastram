@@ -33,6 +33,11 @@ export function Header() {
   // close drawer on route change
   useEffect(() => setOpen(false), [pathname]);
 
+  // The home hero is a light-toned banner, so the nav must stay solid there (cream text would vanish).
+  // Other pages open on a dark page-hero, where the transparent overlay treatment reads well.
+  const isHome = pathname === "/";
+  const solid = scrolled || isHome;
+
   const isActive = (href: string) => {
     const path = href.split("#")[0];
     // Section links on the home page (e.g. "/#wholesale") should never mark active on other routes.
@@ -62,13 +67,13 @@ export function Header() {
       <div
         className={cn(
           "transition-all duration-500",
-          scrolled
+          solid
             ? "border-b border-gold/10 bg-paper/90 shadow-[0_8px_30px_-18px_rgba(58,11,20,.4)] backdrop-blur-md"
             : "border-b border-transparent bg-transparent"
         )}
       >
         <div className="container-lux flex h-[74px] items-center justify-between gap-4 lg:h-[84px]">
-          <Brand light={!scrolled} />
+          <Brand light={!solid} />
 
           <nav className="hidden items-center gap-7 lg:flex xl:gap-9">
             {nav.map((item) =>
@@ -78,7 +83,7 @@ export function Header() {
                     href={item.href}
                     className={cn(
                       "inline-flex items-center gap-1 text-[0.82rem] uppercase tracking-wide2 transition-colors",
-                      scrolled ? "text-ink" : "text-cream",
+                      solid ? "text-ink" : "text-cream",
                       isActive(item.href) && "text-gold-600"
                     )}
                   >
@@ -106,7 +111,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     "relative text-[0.82rem] uppercase tracking-wide2 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 hover:after:scale-x-100",
-                    scrolled ? "text-ink" : "text-cream",
+                    solid ? "text-ink" : "text-cream",
                     isActive(item.href) && "text-gold-600 after:scale-x-100"
                   )}
                 >
@@ -127,7 +132,7 @@ export function Header() {
               aria-label="Open menu"
               className={cn(
                 "inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors lg:hidden",
-                scrolled ? "text-maroon" : "text-cream"
+                solid ? "text-maroon" : "text-cream"
               )}
             >
               <Menu className="h-6 w-6" />

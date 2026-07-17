@@ -162,6 +162,71 @@ export const catalog: Record<string, { meta: Collection; items: Product[] }> = {
   },
 };
 
+// ---- Latest arrivals (home page) ----
+export type LatestProduct = {
+  title: string;
+  image: string;
+  price: number;
+  mrp: number;
+  badge?: string;
+};
+
+export const latestProducts: LatestProduct[] = [
+  {
+    title: "Wine Maroon Banarasi Silk Saree | Gold Zari Border",
+    image: img("30193764"),
+    price: 17500,
+    mrp: 29999,
+    badge: "Bestseller",
+  },
+  {
+    title: "Rust Red Mashru Silk Banarasi Saree | Limited Edition",
+    image: img("19764064"),
+    price: 4800,
+    mrp: 9800,
+    badge: "Limited",
+  },
+  {
+    title: "Nude Pink Rangkat Mashru Silk Saree | Mughal Arch Motif | Zari Border & Pallu",
+    image: img("34058551"),
+    price: 4800,
+    mrp: 8999,
+  },
+  {
+    title: "Haldi Gold Tissue Organza Saree | Choti Butti Weaving | Brocade Zari Pallu",
+    image: img("29743627"),
+    price: 11500,
+    mrp: 19500,
+    badge: "New",
+  },
+  {
+    title: "Sindoori Red Kadwa Bridal Banarasi Saree | Handwoven Motifs",
+    image: img("19376431"),
+    price: 7200,
+    mrp: 13999,
+    badge: "Bridal",
+  },
+  {
+    title: "Emerald Green Banarasi Brocade Silk Saree | Gold Zari Butti",
+    image: img("36041239"),
+    price: 8500,
+    mrp: 13500,
+  },
+  {
+    title: "Royal Blue Jangla Banarasi Katan Silk Saree | Silver Zari Jaal",
+    image: img("28517477"),
+    price: 15900,
+    mrp: 26500,
+  },
+  {
+    title: "Peach Coral Banarasi Silk Saree | Gold Zari Border & Butti",
+    image: img("28943474"),
+    price: 6500,
+    mrp: 11999,
+    badge: "New",
+  },
+];
+
 // Editorial imagery
 export const media = {
   hero: "/images/hero.jpg",
